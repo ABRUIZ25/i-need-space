@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,11 @@
     <title>Satellite Viewer</title>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Orelega+One&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orelega+One&family=Roboto:wght@400&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
     <div class="content">
@@ -17,7 +20,7 @@
         <h1>
             When can I see a certain satellite?
         </h1>
-        
+
         <div class="section">
             <div class="row">
                 <h2>
@@ -26,10 +29,12 @@
             </div>
             <div class="row">
                 <label>Mapbox API Key</label>
-                <input id="api-key" />
+                <input id="ApiKey" />
             </div>
             <div class="row">
-                <label>Address</label>
+                <label>Address
+                    (street, city)
+                </label>
                 <input id="address" />
             </div>
             <div class="row">
@@ -42,6 +47,30 @@
                 </button>
             </div>
         </div>
+
+        <Div class="locationInfo">
+            <div class="one"> Address line 1: </div>
+            <div class="LatOne">latitude:</div>
+            <div class="LonOne">longitude:</div>
+            <button class="ButtonOne">Get Satellite</button>
+            <div class="two"> Address line 2: </div>
+            <div class="LatTwo">latitude:</div>
+            <div class="LonTwo">longitude:</div>
+            <button class="ButtonTwo">Get Satellite</button>
+            <div class="three"> Address line 3: </div>
+            <div class="LatThree">latitude:</div>
+            <div class="LonThree">longitude:</div>
+            <button class="ButtonThree">Get Satellite</button>
+        </Div>
+
+        <div class="SatInfo">
+            <H3 class="InfoTitle">Your Satellite Information</H3>
+            <div class="when">when will it be visible: </div>
+            <div class="Where">Direction it will be visible: </div>
+            <div class="Sun">satellite is being illuminated by the sun: </div>
+
+        </div>
+
 
         <div class="section">
             <div class="row">
@@ -82,13 +111,15 @@
                 </div>
             </div>
             <div class="row">
-                <b>Find more of the brightest satellites' NORAD IDs&nbsp;<a href="https://www.n2yo.com/satellites/?c=1">here</a>.</b>
+                <b>Find more of the brightest satellites' NORAD IDs&nbsp;<a
+                        href="https://www.n2yo.com/satellites/?c=1">here</a>.</b>
             </div>
         </div>
 
     </div>
 
-    <script src="apiKey.js"></script>
+
     <script src="main.js"></script>
 </body>
+
 </html>
