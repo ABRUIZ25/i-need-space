@@ -33,7 +33,6 @@ const When = document.querySelector('.when')
 const Where = document.querySelector('.Where')
 const Sun = document.querySelector('.Sun')
 
-//pk.eyJ1IjoibG9raW1wIiwiYSI6ImNrd2wzYWs1ODF5ZmMyd25veDBoMDh2ZmcifQ.XcCUnZxpVxYHeuVa2OnMRg
 
 
 // console.log(location)
